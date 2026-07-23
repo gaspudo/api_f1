@@ -1,0 +1,26 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model Equipe { 
+  id      Int     @id @default(autoincrement()) 
+  name    String @unique
+  pilotos Piloto[]
+} 
+model Piloto { 
+  id        Int     @id @default(autoincrement()) 
+  name      String
+  ativo     Boolean @default(true) 
+  equipe    Equipe    @relation(fields: [equipeId], references: [id]) 
+  equipeId  Int
+} 
