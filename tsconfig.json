@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    // File Layout
+    // Adjusted rootDir to include generated files outside src (e.g. prisma generated files)
+    "rootDir": "./",
+    "outDir": "./dist",
+    "module": "commonjs",
+    "target": "es6",
+    "types": ["node"],
+    "lib": ["esnext"],
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "emitDeclarationOnly": false,
+    "strictNullChecks": true
+  }
+}
