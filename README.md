@@ -25,7 +25,9 @@ src/
 │   └── prisma.ts      # instância do Prisma Client
 ├── utils/
 │   └── utils.ts       # schemas Zod e funções utilitárias
-└── server.ts
+├── server.ts
+│
+└── secrets.ts  # contém as informações sensíveis do projeto
 ```
 
 ##  Instalação
@@ -54,7 +56,7 @@ npm run watch
 Crie um arquivo `.env` na raiz do projeto com base no `.env.example`:
 
 ```env
-DATABASE_URL="postgresql://{user}:{senha}@{host}:{porta}/{db}"
+DATABASE_URL="mysql://{user}:{senha}@{host}:{porta}/{db}"
 DATABASE_USER=SEU_USER
 DATABASE_PASSWORD=SUA_SENHA
 DATABASE_NAME=SEU_DB
