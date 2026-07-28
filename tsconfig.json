@@ -2,7 +2,7 @@
   "compilerOptions": {
     // File Layout
     // Adjusted rootDir to include generated files outside src (e.g. prisma generated files)
-    "rootDir": "./",
+    "rootDir": "./src",
     "outDir": "./dist",
     "module": "commonjs",
     "target": "es6",
@@ -12,5 +12,10 @@
     "esModuleInterop": true,
     "emitDeclarationOnly": false,
     "strictNullChecks": true
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "generated",
+    "prisma"
+  ]
 }
