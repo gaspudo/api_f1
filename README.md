@@ -7,7 +7,7 @@ API REST para gerenciamento de equipes e pilotos de Fórmula 1, desenvolvida com
 - **Node.js** com **TypeScript**
 - **Express 5**
 - **Prisma ORM**
-- **PostgreSQL**
+- **MySQL**
 - **Zod** — validação de dados
 
 ##  Estrutura do Projeto
